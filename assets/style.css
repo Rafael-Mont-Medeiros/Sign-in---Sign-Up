@@ -15,10 +15,12 @@ body{
 }
 
 #container{
+    z-index: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
     color: #fff;
     background-color: bisque;
     width: 400px;
@@ -28,10 +30,6 @@ body{
     border-radius: 5px;
     text-align: center;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-
-#sing-up{
-    position: relative;
 }
 
 h1{
@@ -55,8 +53,7 @@ form input{
     padding: 15px;
     border-radius: 5px;
     font-size: 18px;
-    background-color: #E0DEDE;
-    
+    background-color: #E0DEDE;    
 }
 
 button{
@@ -70,6 +67,48 @@ button{
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 100px;
+    transition: .5s;
 }
 
+button:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+#sing-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    background-color: #fff;
+    width: inherit;
+    height: 400px;
+    bottom: 0;
+    border-radius: 60% / 10%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all .8s ease;
+}
+
+#sing-in h1{
+    color: #142661;
+    transition: .5s;
+}
+
+
+#sing-in .login{
+    cursor: pointer;
+    
+}
+
+#sing-in.desable{
+    transform: translateY(80%);
+
+}
+
+#sing-in.desable h1{
+    font-size: 2rem;
+}
 

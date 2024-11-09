@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="container">
-        <div id="sing-up" onclick="singUp()">
+        <div id="sing-up">
             <h1 id="title">sing up</h1>
 
             <form >
@@ -18,6 +18,17 @@
                 <button type="button">Sing Up</button>
             </form>
         </div>
+
+        <div id="sing-in" class="desable">
+            <h1 onclick="loginAnimation()" class="login">Login</h1>
+
+            <form>
+                <input type="email" placeholder="your email">
+                <input type="password" placeholder="your password">
+                <button type="button">Sing In</button>
+            </form>
+        </div>
     </div>
 </body>
+    <script src="/assets/script.js"></script>
 </html>
