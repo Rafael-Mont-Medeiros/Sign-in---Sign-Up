@@ -4,11 +4,11 @@ let titleSingUp = document.querySelector('#title');
 
 function loginAnimation(){
     
-    login.classList.toggle('desable');
-
+    login.classList.toggle('desable');    
 };
 
 titleSingUp.addEventListener('click',()=>{
+
     login.classList.add('desable');
     
 });
